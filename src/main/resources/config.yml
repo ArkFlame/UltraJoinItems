@@ -1,1 +1,14 @@
-task-repeat-every: 10
+hotbars:
+  default_hotbar:
+    items:
+      example:
+        slot: 4
+        material: COMPASS
+        damage: 0
+        amount: 1
+        name: "&6Lobby Selector"
+        lore:
+          - "&7Right-click to go back"
+          - "&7to the main lobby"
+        commands:
+          - "server lobby"
