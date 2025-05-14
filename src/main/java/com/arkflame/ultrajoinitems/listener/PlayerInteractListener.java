@@ -19,7 +19,7 @@ public class PlayerInteractListener implements Listener {
     @EventHandler
     public void onPlayerInteract(PlayerInteractEvent event) {
         Player player = event.getPlayer();
-        if (event.getAction().toString().contains("RIGHT_CLICK")) {
+        if (event.getAction().toString().contains("CLICK")) {
             InteractableHotbar hotbar = hotbarManager.getPlayerHotbar(player);
             if (hotbar != null) {
                 int selectedSlot = player.getInventory().getHeldItemSlot();
